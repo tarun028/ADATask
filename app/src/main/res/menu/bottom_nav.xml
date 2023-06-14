@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/explore"
+        android:title="Explore"
+        android:icon="@drawable/ic_explore"/>
+    <item android:id="@+id/network"
+        android:title="Network"
+        android:icon="@drawable/ic_network"/>
+    <item android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat"/>
+    <item android:id="@+id/Contact"
+        android:title="Contact"
+        android:icon="@drawable/ic_contact"/>
+    <item android:id="@+id/group"
+        android:title="Group"
+        android:icon="@drawable/ic_group"/>
+
+</menu>
