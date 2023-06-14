@@ -42,7 +42,7 @@
                     android:textSize="17sp"
                     android:textColor="#ffffff"
                     android:fontFamily="monospace"
-                    android:text="Hi HR,this is Tarun Srivastava "
+                    android:text="Hi HR,this is Sukriti Verma"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <ImageButton
