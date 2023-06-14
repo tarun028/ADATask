@@ -25,24 +25,35 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical">
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnLeft"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button 1" />
+
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/ic_navdraw"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Your Title"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="monospace"
+                    android:text="Hi HR,this is Tarun Srivastava "
                     android:textAppearance="?android:textAppearanceMedium" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnRight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button 2" />
+
+                    android:minWidth="32dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/ic_refine"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
