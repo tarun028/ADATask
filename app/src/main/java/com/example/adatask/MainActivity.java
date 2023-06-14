@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +14,8 @@ import android.widget.FrameLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.tabs.TabLayout;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
@@ -47,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-                viewPager2.setVisibility(View.GONE);
-                frameLayout.setVisibility(View.VISIBLE);
+                viewPager2.setVisibility(View.VISIBLE);
+                frameLayout.setVisibility(View.GONE);
             }
         });
 
@@ -59,13 +62,14 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                     case 1:
                     case 2:
-                        tabLayout.getTabAt(position).select();
+                        Objects.requireNonNull(tabLayout.getTabAt(position)).select();
                 }
                 super.onPageSelected(position);
             }
         });
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
 
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 frameLayout.setVisibility(View.VISIBLE);

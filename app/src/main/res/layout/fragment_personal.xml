@@ -4,13 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Personal">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/searchbar"
+            android:hint="Search"
+            android:padding="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_search_24"
+            android:contentDescription="Search Icon"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:layout_height="match_parent"
-        android:text="This is a Demo App of Netclan Explorer" />
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Additional Text"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:padding="8dp"
+        android:contentDescription="Placeholder for Image" />
 
 </LinearLayout>
