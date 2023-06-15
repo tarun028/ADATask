@@ -35,19 +35,45 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="Placeholder for Image"
+        android:padding="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blackcoffer" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Need Your Location"
+        android:textColor="#003060"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceMedium" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="Additional Text"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Sorry!! location permission is mandatory, Please allow location permission!"
         android:textAppearance="?android:textAppearanceMedium" />
 
-    <ImageView
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
-        android:scaleType="centerCrop"
-        android:padding="8dp"
-        android:contentDescription="Placeholder for Image" />
+        android:text="Allow"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"/>
 
 </LinearLayout>
