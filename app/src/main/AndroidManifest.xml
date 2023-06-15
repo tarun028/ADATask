@@ -13,6 +13,13 @@
         android:theme="@style/Theme.ADATask"
         tools:targetApi="31">
         <activity
+            android:name=".Revive2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".revive"
             android:exported="false">
             <meta-data

@@ -19,6 +19,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
             android:background="@drawable/searchbar"
             android:hint="Search"
             android:padding="8dp"
@@ -26,6 +28,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
             android:src="@drawable/ic_baseline_search_24"
             android:contentDescription="Search Icon"
             android:layout_gravity="center_vertical"/>
