@@ -28,7 +28,7 @@
                     android:background="@null"
                     android:contentDescription="@string/back_button_description"
                     android:padding="8dp"
-                    android:src="@drawable/ic_refine"
+                    android:src="@drawable/ic_back"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
@@ -36,7 +36,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_toRightOf="@id/backButton"
-                    android:text="My Title"
+                    android:text="Refine"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="serif-monospace"
                     android:textColor="@color/white"
                     android:gravity="center_vertical" />
 
@@ -44,40 +47,120 @@
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Text line 1" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Select Your Availability"
+        android:textStyle="bold"
+        android:textColor="#003060"
+        android:textSize="25sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <Button
+        android:id="@+id/availabilityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Availability | Hey Let Us Connect" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Add Your Status"
+        android:textStyle="bold"
+        android:textColor="#003060"
+        android:textSize="25sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="8dp" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter your text"
+        android:textColorHint="#808080"
+        android:textColor="#000000"
+        android:textSize="20sp" >
+
+    </EditText>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Text line 2" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Select Hyper Local Distance"
+        android:textStyle="bold"
+        android:textColor="#003060"
+        android:textSize="25sp" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="15dp" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Text line 3" />
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:min="1"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/seekBarValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginEnd="16dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
     <Space
-        android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Text line 4" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Select Purpose"
+        android:textStyle="bold"
+        android:textColor="#003060"
+        android:textSize="25sp" >
 
+    </TextView>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"/>
     <LinearLayout
         android:layout_gravity="center"
         android:layout_width="wrap_content"
@@ -94,7 +177,7 @@
                 android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:background="@drawable/custombutton"
-                android:text="Button"
+                android:text="Coffee"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Space
@@ -106,7 +189,7 @@
                 android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:background="@drawable/custombutton"
-                android:text="Button"
+                android:text="Business"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Space
@@ -118,7 +201,7 @@
                 android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:background="@drawable/custombutton"
-                android:text="Button"
+                android:text="Hobbies"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
@@ -128,12 +211,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
             <Button
                 android:id="@+id/button4"
                 android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:background="@drawable/custombutton"
-                android:text="Button"
+                android:text="Friend"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Space
@@ -144,8 +228,7 @@
                 android:id="@+id/button5"
                 android:layout_width="120dp"
                 android:layout_height="60dp"
-
-                android:text="Button" />
+                android:text="Movie" />
 
             <Space
                 android:layout_width="8dp"
@@ -156,7 +239,7 @@
                 android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:background="@drawable/custombutton"
-                android:text="Button"
+                android:text="Dining"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
@@ -171,7 +254,7 @@
                 android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:background="@drawable/custombutton"
-                android:text="Button"
+                android:text="Dating"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Space
@@ -182,7 +265,7 @@
                 android:id="@+id/button8"
                 android:layout_width="120dp"
                 android:layout_height="60dp"
-                android:text="Button" />
+                android:text="Mate" />
 
 
 
@@ -192,17 +275,17 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="40dp" />
 
     <!-- Add any other components or layouts here -->
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="140dp"
+        android:layout_width="190dp"
         android:layout_height="45dp"
         android:layout_gravity="center"
         android:background="@drawable/custombutton"
-        android:text="Button 10"
+        android:text="Save and Explore"
         tools:ignore="TouchTargetSizeCheck" />
 
 </LinearLayout>
